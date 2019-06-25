@@ -1,0 +1,80 @@
+body {
+    font-family: 'Open Sans', Sans-serif;
+    color: #000;
+}
+h1 {
+    font-weight: 900;
+    font-family: 'Merriweather', serif;
+}
+h5 {
+    display: hidden;   
+}
+#work a{transition: color 0.3s;}
+#work a:hover{
+    color: #4FB99F;
+}
+#work #pg-title{
+    font-weight: 900;
+}
+#work #commitment-zone a {
+    text-decoration: none;
+    color: #4FB99F;
+}
+
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: #14355B;
+    border-color: #14355B;
+}
+.btn-primary:hover {
+    background-color: #4FB99F;
+    border-color: #4FB99F;
+}
+
+
+.overlayFAQ {
+    /* heigh starts at 0 because I want it to come down from the top */    
+    height: 0;
+    width: 100%;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    background-color: #4FB99F; /* PLP blue fallback color */
+    overflow-y: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  .overlayTwitter {
+    /* heigh starts at 0 because I want it to come down from the top */    
+    height: 0;
+    width: 100%;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    background-color: #c7c7c7; /* PLP blue fallback color */
+    overflow-y: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: left; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    color: #fff;
+  }
+  .overlayFAQ .closebtn, .overlayTwitter .closebtn {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    font-size: 60px;
+    color: #fff;
+  }
+
+
+  #ppiOverlay {
+      width: 100vw;
+  }
