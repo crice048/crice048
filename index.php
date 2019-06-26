@@ -9,94 +9,90 @@
         <div class="container">
             <?php include "navbar-ctc.php" ?>
 
-            <div class="row" id="intro-zone">
-                <div class="col-10 offset-1 my-3">
-                    <h2 class="mb-3">Why should I make a commitment to change?</h2>
-                    <p>Writing down a goal can increase your commitment to that goal and the likelihood of achieving it.</p>
-                    <p>When you are done entering in your information, click the button to auto-generate an individualized .ics file. This will create an appointment in whatever calendar app you prefer for three months from now and remind you of the commitment you are making today.</p>
-                </div>
+            <div class="row mx-1" id="intro-zone">
+                <?php include "intro.php" ?>
             </div>
-            
-            <div class="row" id="commitment-zone">
-                <div class="col-10 offset-1 my-3">
-                <form>
-                    <div class="form-group row">
-                        <label class="col-md-4 col-12 font-weight-semibold" for="areaOfPracticeArea">Where do you practice?</label>
-                        <div class="col-md-8 col-12">
-                            <input type="email" class="form-control" id="areaOfPracticeArea" placeholder="Ex. Primary Care, Emergency Department">
-                        </div>
-                    </div>
 
-                    <!--Commitment zone-->
-                    <div class="form-group">
-                        <label for="commitmentTextArea" class="font-weight-semibold">What <a href="#" data-toggle="tooltip" data-placement="top" title="Be specific about what you want to change.">concrete</a>, <a href="#" data-toggle="tooltip" data-placement="top" title="How will you mark your progress?">measurable</a> change will you make?</label>
-                        <textarea class="form-control" id="commitmentTextArea" rows="3"></textarea>
-                    </div>
-                    
-                    <!--Commitment level zone-->
-                    <div class="form-group row">
-                        <div class="col-md-4 col-12 font-weight-semibold">
-                            How commited are you to making this change?
+            <div class="row" id="commitment-zone">
+                <div class="col-10 offset-md-1 my-5">
+                    <h3>Make your commitment today!</h3>
+
+                    <form>
+                        <!-- Commitment topic -->
+                        <div class="form-group row mx-1 mb-4">
+                            <?php include "commit-topic.php" ?>
+                        </div>
+
+                        <!--Commitment zone-->
+                        <div class="form-group row mx-1 mb-4">
+                            <?php include "commit-box.php" ?>
+                        </div>
+
+                        <!--How they will change zone-->
+                        <div class="form-group row mx-1 mb-4">
+                            <?php include "commit-how.php" ?>
                         </div>
                         
-                        <div class="col-md-8 col-12">
+                        <!--Commitment level zone (level and timeline) -->
+                        <div class="form-group row mx-1 mb-4">
                             <?php include "commit-level.php" ?>
+                            <?php include "timeline.php" ?>
                         </div>
-                    </div>
+                        
 
 
-
-                    <div class="row my-2">
-                        <div class="col-md-4 col-12">
-                            <button type="submit" class="btn btn-primary my-1" id="generate">Generate your individualized calendar reminder</button>
+                        <!--Action zone-->
+                        <div class="row my-3">
+                            <?php include "actions.php" ?>
                         </div>
-                    </div>
-                    
-
-                    <div id="faqOverlay" class="overlayFAQ row">
-                        <!-- button to close-->
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeFAQ()">&times;</a>
-
-                        <!-- FAQ content -->
-                        <div class="overlay-content col-8 offset-2 ">
-                            <div class="row">
-                                <h4>Who is this for?</h4>
-                                <p>This document was created for healthcare professionals to keep track of their own personal goals for change. It is part of a larger effort by the Alberta Physician Learning Program to engage physicians in reflection and physician practice improvement.</p>
-                            </div>
-                            <div class="row mt-3">
-                                <h4>Is any information I enter into the form saved?</h4>
-                                <p>Yes, but no identifiable information is being collected. By entering your information into this project you are agreeing to share the information with the creator of this website. This project was created for an assignment, thus with specific technical requirements. For that reason, the information you enter into the fields is saved into a database.</p>
-                            </div>
-                            <div class="row mt-3">
-                                <h4>What if I submit my commitment to change, then decide I don't want it saved somewhere?</h4>
-                                <p>If you are uncomfortable with the idea of your commitment being recorded but you have already submitted the information, please email me at chris@designingrice.com and I will remove your entry from the list.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="twitOverlay" class="overlayTwitter row">
-                        <!-- button to close-->
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeTwitter()">&times;</a>
-
-                        <!-- FAQ content -->
-                        <div class="overlay-content col-8 offset-2 ">
-                            <div class="row">
-
-                            </div>
-                            
-                            <div class="row">
-                                <div class="col-md-8 offset-md-1 col-12 offset-0" id="twittertainer">
-                                    <a class="twitter-timeline" href="https://twitter.com/DesigningRice?ref_src=twsrc%5Etfw" data-width="max-width" data-height="60vh" data-chrome="nofooter noborders">Tweets by DesigningRice</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </form>
+                    </form>
                 </div>
             </div>
 
+            <div id="faqOverlay" class="overlayFAQ row">
+                <!-- button to close-->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeFAQ()">&times;</a>
+
+                <!-- FAQ content -->
+                <div class="overlay-content col-8 offset-md-2 ">
+                    <div class="row">
+                        <h4>What is a commitment to change?</h4>
+                        <p>A commitment to change is a method used by the Alberta Physician Learning Program (PLP) to assist with physician practice improvement.  </p>
+                    </div>
+                    <div class="row">
+                        <h4>Who is this for?</h4>
+                        <p>Healthcare professionals mostly. But feel free to use it for other uses too. None of the information you enter is saved.</p>
+                    </div>
+                    <div class="row">
+                        <h4>Why is there the option to share my commitment to change on twitter?</h4>
+                        <p>There is a need to develop a positive culture around continuing professional development (CPD) and physician practice improvement. I am hoping that we can create a non-judgemental zone that will give healthcare workers the confidence and support they need to make CPD a positive experience.</p>
+                    </div>
+                    <div class="row">
+                        <h4>Why does this page exist?</h4>
+                        <p>PLP asks healthcare professionals to write down actionable goals that they can work towards on their personal CPD journey. This web page came as a result of a school assignment to develop a website with specific technical requirements. As the KT specialist at the PLP Calgary office, I saw an opportunity to create a third-party service that would allow physicians to independently make a commitment to change.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="twitOverlay" class="overlayTwitter row">
+                <!-- button to close-->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeTwitter()">&times;</a>
+
+                <!-- FAQ content -->
+                <div class="overlay-content col-8 offset-md-2 ">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-1 col-12">
+                            <h4 class="mb-3">See what the #CommitToCPD community is up to:</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-8 offset-md-1 col-12 offset-0" id="twittertainer">
+                            <a class="twitter-timeline" href="https://twitter.com/DesigningRice?ref_src=twsrc%5Etfw" data-width="max-width" data-height="60vh" data-chrome="nofooter noborders">Tweets by DesigningRice</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
 

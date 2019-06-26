@@ -2,37 +2,40 @@ body {
     font-family: 'Open Sans', Sans-serif;
     color: #000;
 }
-h1 {
-    font-weight: 900;
-    font-family: 'Merriweather', serif;
-}
 h5 {
     display: hidden;   
 }
+h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+}
 #work a{transition: color 0.3s;}
 #work a:hover{
-    color: #4FB99F;
+    color: #EB5F80;
+    text-decoration: none;
 }
 #work #pg-title{
     font-weight: 900;
 }
 #work #commitment-zone a {
     text-decoration: none;
-    color: #4FB99F;
+    color: #EB5F80;
+}
+#work #intro-zone a {
+    color: #EB5F80;
 }
 
 .btn-primary,
 .btn-primary:active,
 .btn-primary:visited,
 .btn-primary:focus {
-    background-color: #14355B;
-    border-color: #14355B;
+    background-color: #EB5F80;;
+    border-color: #EB5F80;;
 }
 .btn-primary:hover {
-    background-color: #4FB99F;
-    border-color: #4FB99F;
+    background-color: #EB5F80;
+    border-color: #EB5F80;
 }
-
 
 .overlayFAQ {
     /* heigh starts at 0 because I want it to come down from the top */    
@@ -42,7 +45,7 @@ h5 {
     z-index: 1; 
     left: 0;
     top: 0;
-    background-color: #4FB99F; /* PLP blue fallback color */
+    background-color: #EB5F80; /* PLP blue fallback color */
     overflow-y: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
   }
@@ -54,13 +57,13 @@ h5 {
     z-index: 1; 
     left: 0;
     top: 0;
-    background-color: #c7c7c7; /* PLP blue fallback color */
+    background-color: #686868; /* PLP blue fallback color */
     overflow-y: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
   }
   .overlay-content {
     position: relative;
-    top: 25%; /* 25% from the top */
+    top: 15%; /* 25% from the top */
     width: 100%; /* 100% width */
     text-align: left; /* Centered text/links */
     margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
@@ -73,7 +76,6 @@ h5 {
     font-size: 60px;
     color: #fff;
   }
-
 
   #ppiOverlay {
       width: 100vw;

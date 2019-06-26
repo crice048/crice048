@@ -1,0 +1,2 @@
+<label for="commitmentTextArea" class="font-weight-semibold">Then, tell us what <a href="#" data-toggle="tooltip" data-placement="top" title="Be specific about what you want to change." class="font-weight-bold">concrete</a>, <a href="#" data-toggle="tooltip" data-placement="top" title="How will you mark your progress?" class="font-weight-bold">measurable</a> change you're going to make:</label>
+<textarea class="form-control" id="commitmentTextArea" rows="2" placeholder="I will reduce my total number of blood transfusions in total joint replacement surgeries"></textarea>
